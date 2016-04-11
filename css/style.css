@@ -383,9 +383,75 @@ html, body {
   padding: 5% 0;
   min-height: 100%;
 }
-.toolsCont h1 {
+.toolsCont h2 {
+  color: #50C0A0;
+  font-weight: bold;
+}
+.toolsCont .cloud {
+  padding-top: 10px;
+}
+.toolsCont .cloud .cloud-ul {
+  margin: 0;
+  padding: 2px;
+  line-height: 3em;
+  text-align: center;
+}
+.toolsCont .cloud .cloud-ul li {
+  display: inline;
+}
+.toolsCont .cloud .cloud-ul li a {
+  padding: 3px;
+}
+.toolsCont .cloud .cloud-ul li a.c1 {
+  font-size: 0.7em;
+  font-weight: 100;
+}
+.toolsCont .cloud .cloud-ul li a.c2 {
+  font-size: 0.8em;
+  font-weight: 200;
+}
+.toolsCont .cloud .cloud-ul li a.c3 {
+  font-size: 0.9em;
+  font-weight: 300;
+}
+.toolsCont .cloud .cloud-ul li a.c4 {
+  font-size: 1.0em;
+  font-weight: 400;
+}
+.toolsCont .cloud .cloud-ul li a.c5 {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+.toolsCont .cloud .cloud-ul li a.c6 {
+  font-size: 1.4em;
+  font-weight: 600;
+}
+.toolsCont .cloud .cloud-ul li a.c7 {
+  font-size: 1.6em;
+  font-weight: 700;
+}
+.toolsCont .cloud .cloud-ul li a.c8 {
+  font-size: 1.8em;
+  font-weight: 800;
+}
+.toolsCont .cloud .cloud-ul li a.c9 {
+  font-size: 2.2em;
+  font-weight: 900;
+}
+.toolsCont .cloud .cloud-ul li a.c10 {
+  font-size: 2.5em;
+  font-weight: 900;
+}
+
+/*Tools - Cloud End*/
+/*About*/
+.aboutCont {
+  padding: 5%;
+  min-height: 100%;
+}
+.aboutCont h2 {
   color: #50C0A0;
   font-weight: bold;
 }
 
-/*Tools - Cloud End*/
+/*About End*/
