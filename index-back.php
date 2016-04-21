@@ -1,4 +1,5 @@
 <?php include_once('connect.php');?>
+<?php date_default_timezone_set('Asia/Calcutta');  ?>
 <!doctype HTML>
 <html>
 <head>
@@ -81,7 +82,7 @@
 		$terms = array(); 
         $maximum = 0; 	
  
-        $query = mysql_query("SELECT term, counter,id FROM search ORDER BY counter DESC LIMIT 30");
+        $query = mysql_query("SELECT term, counter, id FROM `search` ORDER BY counter DESC LIMIT 30");
         while ($row = mysql_fetch_array($query))
 		{
 			$term = $row['term'];

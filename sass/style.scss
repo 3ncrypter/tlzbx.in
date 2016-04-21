@@ -10,7 +10,7 @@
 
 /*Universal*/
 *, html{font-family: 'Lato', sans-serif;}
-.padd0{padding: 0;}
+.nopadd{padding: 0;}
 .norad{border-radius: 0;}
 
 /*Floats*/
@@ -99,7 +99,7 @@ html, body {width: 100%;height: 100%;}
 .wrapper{min-height: 100%;width: 100%;position: relative;}
 
 /*Home - Search*/
-.home {background: url("../assets/1.jpg") no-repeat fixed center top;position: relative;background-size: cover;
+.home {background: url("../assets/bg-search.jpg") no-repeat fixed center top;position: relative;background-size: cover;
     &:before{content: "";position: absolute;top: 0;left: 0; height: 100%;width: 100%;background: url(../assets/grid.png);}
     .form_ico{position: absolute;top: 37%;right: 25px;cursor: pointer;}
     .toDown{display: block;width:50px; height: 50px; text-align: center; background: rgba(255,2555,255,0.7);position: absolute;left:50%;bottom: 10px;padding:16px;z-index: 999;color:#000!important;margin-left: -25px;z-index: 9;@include animation(pulse 2s infinite)}
@@ -114,8 +114,10 @@ html, body {width: 100%;height: 100%;}
 
 /*Tools - Cloud*/
 .toolsCont{padding: 5% 0; min-height: 100%;
-    h2{color: #50C0A0;font-weight: bold;}
-    .cloud{padding-top: 10px;
+    h1{color: #50C0A0;font-weight: bold;display: inline-block;
+        &:after{background: #000;content: "";display: block;height: 5px;margin: 10px auto;width: 80px;}
+    }
+    .cloud{padding: 60px 15px;
         .cloud-ul{margin: 0; padding: 2px; line-height: 3em; text-align: center; 
             li{display: inline;
                 a{padding: 3px; }
@@ -136,7 +138,56 @@ html, body {width: 100%;height: 100%;}
 /*Tools - Cloud End*/
 
 /*About*/
-.aboutCont{padding: 5%; min-height: 100%;
-    h2{color: #50C0A0;font-weight: bold;}
+.about{background: url(../assets/bg-team.png) no-repeat fixed center top;background-size: cover;
+    .aboutCont{padding: 5%; min-height: 100%;
+        h1{color: #fff;font-weight: bold;display: inline-block;
+            &:after{background: #000;content: "";display: block;height: 5px;margin: 10px auto;width: 80px;}
+        }
+        .about-content{padding: 30px 15px;}
+        .about-team{padding: 50px 15px}
+    }
 }
 /*About End*/
+
+/*Participate*/
+.participate{
+    .partCont{padding: 5%; min-height: 100%;
+        h1{color: #50C0A0;font-weight: bold;display: inline-block;
+            &:after{background: #000;content: "";display: block;height: 5px;margin: 10px auto;width: 80px;}
+        }
+        .mailing-list{padding: 30px 15px;
+            i{position: absolute;top: 4%;right: 20px;cursor: pointer;}
+        }        
+    }
+}
+
+/*Participate End*/
+
+/*Contact*/
+.contact{background: url(../assets/bg-team.png) no-repeat fixed center top;background-size: cover;
+    .contactCont{padding: 5%; min-height: 100%;
+        h1{color: #fff;font-weight: bold;display: inline-block;
+            &:after{background: #000;content: "";display: block;height: 5px;margin: 10px auto;width: 80px;}
+        }
+        .mailing-list{padding: 30px 15px;
+            i{position: absolute;top: 4%;right: 20px;cursor: pointer;}
+        }        
+    }
+    .social-list{padding: 150px 0;
+        .socialMe{
+             li{display: inline-block;font-size: 30px;margin-right: 25px;margin-bottom: 20px;
+                a{color: #fff; border: 1px solid;@include border-radius(50%);display: block;height: 60px;line-height: 60px;width: 60px;@include transition(all .5s ease);
+                    &.facebook:hover{background: #3B5998;color: #fff;}
+                    &.twitter:hover{background: #55ACEE;color: #fff;}
+                    &.linkedin:hover{background: #007BB5;color: #fff;}
+                    &.google-plus:hover{background: #E02F2F;color: #fff;}
+                    &.instagram:hover{background: #316699;color: #fff;}
+                    &.github:hover{background: #181616;color: #fff;}
+                }
+            }
+        }
+    }
+}
+
+
+/*Contact End*/

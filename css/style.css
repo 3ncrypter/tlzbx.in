@@ -19,7 +19,7 @@
   font-family: 'Lato', sans-serif;
 }
 
-.padd0 {
+.nopadd {
   padding: 0;
 }
 
@@ -327,7 +327,7 @@ html, body {
 
 /*Home - Search*/
 .home {
-  background: url("../assets/1.jpg") no-repeat fixed center top;
+  background: url("../assets/bg-search.jpg") no-repeat fixed center top;
   position: relative;
   background-size: cover;
 }
@@ -383,12 +383,21 @@ html, body {
   padding: 5% 0;
   min-height: 100%;
 }
-.toolsCont h2 {
+.toolsCont h1 {
   color: #50C0A0;
   font-weight: bold;
+  display: inline-block;
+}
+.toolsCont h1:after {
+  background: #000;
+  content: "";
+  display: block;
+  height: 5px;
+  margin: 10px auto;
+  width: 80px;
 }
 .toolsCont .cloud {
-  padding-top: 10px;
+  padding: 60px 15px;
 }
 .toolsCont .cloud .cloud-ul {
   margin: 0;
@@ -445,13 +454,142 @@ html, body {
 
 /*Tools - Cloud End*/
 /*About*/
-.aboutCont {
+.about {
+  background: url(../assets/bg-team.png) no-repeat fixed center top;
+  background-size: cover;
+}
+.about .aboutCont {
   padding: 5%;
   min-height: 100%;
 }
-.aboutCont h2 {
-  color: #50C0A0;
+.about .aboutCont h1 {
+  color: #fff;
   font-weight: bold;
+  display: inline-block;
+}
+.about .aboutCont h1:after {
+  background: #000;
+  content: "";
+  display: block;
+  height: 5px;
+  margin: 10px auto;
+  width: 80px;
+}
+.about .aboutCont .about-content {
+  padding: 30px 15px;
+}
+.about .aboutCont .about-team {
+  padding: 50px 15px;
 }
 
 /*About End*/
+/*Participate*/
+.participate .partCont {
+  padding: 5%;
+  min-height: 100%;
+}
+.participate .partCont h1 {
+  color: #50C0A0;
+  font-weight: bold;
+  display: inline-block;
+}
+.participate .partCont h1:after {
+  background: #000;
+  content: "";
+  display: block;
+  height: 5px;
+  margin: 10px auto;
+  width: 80px;
+}
+.participate .partCont .mailing-list {
+  padding: 30px 15px;
+}
+.participate .partCont .mailing-list i {
+  position: absolute;
+  top: 4%;
+  right: 20px;
+  cursor: pointer;
+}
+
+/*Participate End*/
+/*Contact*/
+.contact {
+  background: url(../assets/bg-team.png) no-repeat fixed center top;
+  background-size: cover;
+}
+.contact .contactCont {
+  padding: 5%;
+  min-height: 100%;
+}
+.contact .contactCont h1 {
+  color: #fff;
+  font-weight: bold;
+  display: inline-block;
+}
+.contact .contactCont h1:after {
+  background: #000;
+  content: "";
+  display: block;
+  height: 5px;
+  margin: 10px auto;
+  width: 80px;
+}
+.contact .contactCont .mailing-list {
+  padding: 30px 15px;
+}
+.contact .contactCont .mailing-list i {
+  position: absolute;
+  top: 4%;
+  right: 20px;
+  cursor: pointer;
+}
+.contact .social-list {
+  padding: 150px 0;
+}
+.contact .social-list .socialMe li {
+  display: inline-block;
+  font-size: 30px;
+  margin-right: 25px;
+  margin-bottom: 20px;
+}
+.contact .social-list .socialMe li a {
+  color: #fff;
+  border: 1px solid;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  width: 60px;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.contact .social-list .socialMe li a.facebook:hover {
+  background: #3B5998;
+  color: #fff;
+}
+.contact .social-list .socialMe li a.twitter:hover {
+  background: #55ACEE;
+  color: #fff;
+}
+.contact .social-list .socialMe li a.linkedin:hover {
+  background: #007BB5;
+  color: #fff;
+}
+.contact .social-list .socialMe li a.google-plus:hover {
+  background: #E02F2F;
+  color: #fff;
+}
+.contact .social-list .socialMe li a.instagram:hover {
+  background: #316699;
+  color: #fff;
+}
+.contact .social-list .socialMe li a.github:hover {
+  background: #181616;
+  color: #fff;
+}
+
+/*Contact End*/

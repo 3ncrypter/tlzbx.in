@@ -16,4 +16,9 @@ $(function(){
         $("a[href='#top'],a[rel='m_PageScroll2id']").mPageScroll2id({highlightSelector:".nav-cust-ul li a[rel='m_PageScroll2id']"});
     });
     
+    
+    $.get("dir/data.json", function(data, status){        
+        });
+    
 });
+
