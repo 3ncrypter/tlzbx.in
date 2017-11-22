@@ -1,7 +1,37 @@
-$(function(){
-   $(window).load(function () {$(".loader, .overlay").fadeOut("slow");}); 
+$(window).on('load', function(){
+  $(".overlay").fadeOut("slow");
+});
+$(function(){  
+   $('a[href*="#"]')
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {    
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {      
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');      
+      if (target.length) {        
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 500, function() {                    
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) {
+            return false;
+          } else {
+            $target.attr('tabindex','-1');
+            $target.focus();
+          };
+        });
+      }
+    }
+  });
 
-   /*back to top*/ 
+/*Add active class to the section currently in viewport*/   
     $(window).scroll(function(){
         if ($(this).scrollTop()>300){
             $('.toTop').show();            
@@ -9,17 +39,7 @@ $(function(){
         else{
             $('.toTop').hide();
         }
-        });
-
-    /*page scroll to id*/
-    $(window).load(function(){       
-        $("a[href='#top'],a[rel='m_PageScroll2id']").mPageScroll2id({highlightSelector:".nav-cust-ul li a[rel='m_PageScroll2id']"});
     });
-    
-    
-    $.get("dir/data.json", function(data, status){        
-        });
-    
 });
 
 (function(){
