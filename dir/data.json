@@ -1,6 +1,6 @@
 [
     {
-        "img" : "1",
+        "img" : "3",
         "name" : "Suraj Verma",
         "pro" : "UI Developer"
     },
@@ -9,14 +9,14 @@
         "name" : "Paankhuri",
         "pro" : "UI Developer"
     },
-    {
-        "img" : "3",
-        "name" : "Vivekanand Dangwal",
-        "pro" : "Web Developer"
-    },
-    {
+	{
         "img" : "4",
         "name" : "Dipanshu Agarwal",
+        "pro" : "Web Developer"
+    }
+    {
+        "img" : "1",
+        "name" : "Vivekanand Dangwal",
         "pro" : "Web Developer"
     }
 ]
