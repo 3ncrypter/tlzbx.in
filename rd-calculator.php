@@ -3,10 +3,10 @@
 	<div class="container rd-calc-cont">
 		<div class="row">
 			<div class="col-md-9 mx-auto">
-				<h2 class="invisible">
+				<h2>
 					Recurring Deposits (RD) Maturity Value Calculator
 				</h2>
-				<p class="invisible">
+				<p>
 					An online financial calculator to calculate the maturity value of your recurring deposit. Recurring deposit is different from a fixed deposit in the sense that in recurring deposit the deposit amount is paid in installments (monthly) for the same interest rates as applicable in fixed deposits. In the below Recurring Deposits (RD) Maturity Value calculator, select the currency and enter the values for installment amount, interest rate and period and click calculate to find the maturity value.
 				</p>
 				<form action="#">

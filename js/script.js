@@ -73,12 +73,42 @@ $(function(){
 
 /*RD Calculator*/  
 $(function(){
-  document.addEventListener('keyup', function(){
-    var rd_mi = $('#rd-mi').val();
-    var rd_roi = $('#rd-roi').val();
-    var rd_nm = $('#rd-nm').val();
-    var rd_comp = $('#rd-comp').val();
-    console.log('mi='+rd_mi+' roi'+rd_roi+' time'+rd_nm+' comp'+rd_comp)   
-    document.getElementById('rd-mv').value = rd_mi + rd_roi + rd_nm + rd_comp
-  });
+  function getValues(){
+    var rd_mi = parseFloat($('#rd-mi').val());  //P
+    var rd_roi = parseFloat($('#rd-roi').val()); //R
+    var rd_nm = parseFloat($('#rd-nm').val()); //T --> t = T/12 (t is time duration in Years)
+    var rd_comp = parseFloat($('#rd-comp').val()); //N
+    //console.log('mi='+rd_mi+' roi'+rd_roi+' time'+rd_nm+' comp'+rd_comp)
+    var amount_array = [];    
+    var x = calculate_x(rd_roi,rd_comp);
+    for (var i = rd_nm; i>=1; i--){
+        a = rd_mi*Math.pow(x,rd_comp*calculate_t(i));
+        //console.log(a);
+        amount_array.push(a);
+    }
+    var rd_mv = amount_array.reduce(function(previousValue, currentValue, index, array) {
+      return previousValue + currentValue;
+    });
+    //console.log(rd_mv);
+      //document.getElementById("rd-mv").value = Math.round(rd_mv);
+
+    //var rd_mv = rd_mi + rd_roi + rd_nm + rd_comp;
+    if(isNaN(rd_mv)){    
+      document.getElementById('rd-mv').value = "Please fill all the fields Correctly";  
+      document.getElementById('rd-mv').style.color = "red"
+    }else{
+      document.getElementById('rd-mv').style.color = "inherit"
+      document.getElementById('rd-mv').value = Math.round(rd_mv);  
+    }    
+  }
+  function calculate_x(rd_roi,rd_comp){
+        var x =  1+(rd_roi/100)/rd_comp;
+        //console.log(x);
+        return x;
+  }
+  function calculate_t(rd_nm){
+    return rd_nm/12
+  }
+  document.addEventListener('keyup', getValues, false);
+  document.addEventListener('change', getValues, false);
 })
