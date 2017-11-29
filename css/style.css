@@ -149,7 +149,8 @@ html, body { width: 100%; height: 100%; }
 .participate .partCont h1 { color: #50C0A0; font-weight: bold; display: inline-block; }
 .participate .partCont h1:after { background: #000; content: ""; display: block; height: 5px; margin: 10px auto; width: 80px; }
 .participate .partCont .mailing-list { padding: 30px 15px; }
-.participate .partCont .mailing-list i { position: absolute; top: 4%; right: 20px; cursor: pointer; }
+.participate .partCont .mailing-list i { position: absolute; top: 0; right: 15px; cursor: pointer; height: 100%; line-height: 3rem; background: #938e8e; color: #fff; padding: 0 8px; }
+.participate .partCont .mailing-list i:hover { background: #757575; color: #d5d5d5; }
 
 /*Participate End*/
 /*Contact*/
@@ -157,8 +158,6 @@ html, body { width: 100%; height: 100%; }
 .contact .contactCont { padding: 5%; min-height: 100%; }
 .contact .contactCont h1 { color: #fff; font-weight: bold; display: inline-block; }
 .contact .contactCont h1:after { background: #000; content: ""; display: block; height: 5px; margin: 10px auto; width: 80px; }
-.contact .contactCont .mailing-list { padding: 30px 15px; }
-.contact .contactCont .mailing-list i { position: absolute; top: 4%; right: 20px; cursor: pointer; }
 .contact .social-list { padding: 150px 0; }
 .contact .social-list .socialMe li { display: inline-block; font-size: 30px; margin-right: 25px; margin-bottom: 20px; }
 .contact .social-list .socialMe li a { color: #fff; border: 1px solid; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; display: block; height: 60px; line-height: 60px; width: 60px; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; -webkit-transition: all 0.5s ease; transition: all 0.5s ease; }
@@ -170,3 +169,9 @@ html, body { width: 100%; height: 100%; }
 .contact .social-list .socialMe li a.github:hover { background: #181616; color: #fff; }
 
 /*Contact End*/
+/*RD Calculator*/
+.rd-calc .rd-calc-cont { margin-top: 65px; }
+.rd-calc .rd-calc-cont form { background: #F4F7F8; padding: 3rem; }
+.rd-calc .rd-calc-cont form .cust-inp, .rd-calc .rd-calc-cont form .custom-select { background-color: #E8EEEF; border: 0; box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset; }
+.rd-calc .rd-calc-cont form .cust-inp:focus, .rd-calc .rd-calc-cont form .cust-inp:active, .rd-calc .rd-calc-cont form .custom-select:focus, .rd-calc .rd-calc-cont form .custom-select:active { background-color: #d2d9dd; }
+.rd-calc .rd-calc-cont form .btn-custom { background: #50c0a0; color: #fff; }

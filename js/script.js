@@ -2,6 +2,13 @@ $(window).on('load', function(){
   $(".overlay").fadeOut("slow");
 });
 $(function(){  
+
+  
+    // $('.nav a').on('click', function () {
+    //     if ($('.navbar-toggle').css('display') != 'none') {
+    //         $(".navbar-toggle").trigger("click");
+    //     }
+    // });
    $('a[href*="#"]')
   .not('[href="#"]')
   .not('[href="#0"]')
@@ -40,10 +47,14 @@ $(function(){
             $('.toTop').hide();
         }
     });
+    $('.toTop').on('click', function() {
+      $('body,html').animate({
+          scrollTop : 0
+      }, 500);
+    });
 });
 
 (function(){
-
   var parallax = document.querySelectorAll(".parallax"),
       speed = 0.3;
 
@@ -59,3 +70,15 @@ $(function(){
   };
 
 })();
+
+/*RD Calculator*/  
+$(function(){
+  document.addEventListener('keyup', function(){
+    var rd_mi = $('#rd-mi').val();
+    var rd_roi = $('#rd-roi').val();
+    var rd_nm = $('#rd-nm').val();
+    var rd_comp = $('#rd-comp').val();
+    console.log('mi='+rd_mi+' roi'+rd_roi+' time'+rd_nm+' comp'+rd_comp)   
+    document.getElementById('rd-mv').value = rd_mi + rd_roi + rd_nm + rd_comp
+  });
+})
