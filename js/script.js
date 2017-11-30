@@ -79,17 +79,15 @@ $(function(){
     var rd_nm = parseFloat($('#rd-nm').val()); //T --> t = T/12 (t is time duration in Years)
     var rd_comp = parseFloat($('#rd-comp').val()); //N
     //console.log('mi='+rd_mi+' roi'+rd_roi+' time'+rd_nm+' comp'+rd_comp)
-    var amount_array = [];    
+    var amount = [];    
     var x = calculate_x(rd_roi,rd_comp);
     for (var i = rd_nm; i>=1; i--){
         a = rd_mi*Math.pow(x,rd_comp*calculate_t(i));
         //console.log(a);
-        amount_array.push(a);
+        amount.push(a);
     }
-    var rd_mv = amount_array.reduce(function(previousValue, currentValue, index, array) {
-      return previousValue + currentValue;
-    });
-    //console.log(rd_mv);
+    var rd_mv = amount.reduce((total, amount) => total + amount);
+    console.log(rd_mv);
       //document.getElementById("rd-mv").value = Math.round(rd_mv);
 
     //var rd_mv = rd_mi + rd_roi + rd_nm + rd_comp;
