@@ -83,7 +83,9 @@
 .navbar-toggle{margin-top: 20px;}
 .nav-custom{margin-bottom: 0;background: rgba(255, 255, 255, 1);border: none;/*@include box-shadow(#ccc 0 0 10px);*/
     a{color: #000 !important;}
-    .logo{font-size: 30px;margin: -15px auto;}
+    .logo{font-size: 30px;margin: -15px auto;
+        small{font-size: 1rem;}
+    }
     .nav-cust-ul{
         .nav-item{
              .nav-link{margin: -8px auto;padding: 18px;

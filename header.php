@@ -23,7 +23,7 @@
         <a href="#top" class="toTop"><i class="fa fa-angle-up"></i></a>
         <!--navigation-->
         <nav class="navbar navbar-expand-md fixed-top navbar-light nav-custom bg-white">
-            <a class="navbar-brand logo" href="#"><i class="fa fa-archive"></i> ToolBox</a>
+            <a class="navbar-brand logo" href="#"><i class="fa fa-archive"></i>Toolbox <small class="text-muted">from <span class=" text-uppercase">Livetricks</span></small></a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#mainNav">
               <span class="navbar-toggler-icon"></span>
             </button>                
